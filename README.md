@@ -1,12 +1,18 @@
 # BestTrace for Linux 用法说明
-登陆SSH
 
-wget https://github.com/zhucaidan/BestTrace-Linux/raw/master/besttrace4linux.zip
-
+## Installation
+```sh
+apt-get install -y unzip zip
+mkdir besttrace
+cd besttrace
+wget https://github.com/phlinhng/BestTrace-Linux/raw/master/besttrace4linux.zip
 unzip besttrace4linux.zip
-
-yum install -y unzip zip
-
 chmod +x besttrace
+cp besttrace /usr/local/bin
+```
 
-./besttrace X.X.X.X
+## Usage
+```sh
+besttrace 8.8.8.8
+besttrace www.tsinghua.edu.cn
+```
